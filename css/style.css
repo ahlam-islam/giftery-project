@@ -1,0 +1,720 @@
+body
+{
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*====arrow to top====*/
+.arrow-up
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1550;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #D70143;
+    color:#D70143;
+    font-size: 1.2rem;
+    font-weight: 100;
+    transition: 1s;
+    display: none;
+}
+.arrow-up:focus
+{
+    outline: none;
+    border: inherit;
+}
+
+.arrow-up:hover
+{
+    color:#D70143;
+    transform: scale(1.1);
+    font-size: 1.3rem;
+}
+
+
+
+/* The Nav Bar */
+.my-nav
+{
+ 
+  background-color: transparent;
+  z-index: 1500;
+}
+.searchButton
+{
+  border: none;
+  background-color: transparent;
+}
+
+.searchButton:focus
+{
+
+  background-color: transparent;
+}
+.form-control:focus 
+{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-inline
+{
+  position: relative;
+}
+.form-inline::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: .5px;
+  background-color: white;
+
+}
+input
+{
+  color: white !important;
+}
+input:focus
+{
+  opacity: 70%;
+}
+::placeholder
+{
+  color: white !important;
+}
+.shopping-icon
+{
+  font-size: 23px;
+  color: white;
+}
+.shopping-icon:hover
+{
+  opacity: 60%;
+}
+.sign-icon
+{
+  margin-right:3rem;
+  font-size: 23px;
+  color: white;
+}
+.sign-icon:hover
+{
+  opacity: 60%;
+}
+.dropdown
+{
+  margin-right: 1.5rem;
+}
+.dropdown .nav-link
+{
+  
+  color: #f2f2f2!important;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  position: relative;
+}
+.dropdown .nav-link::after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:0;
+  height: 2px;
+  background-color:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+  transition: all 1s ;
+}
+.dropdown .nav-link:hover::after
+{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Toggle */
+.navbar-toggler
+{
+  border:none;
+  /* box-shadow:1px 1px 5px black; */
+  color: white !important;
+
+}
+.navbar-toggler span
+{
+ color: white !important;
+}
+.navbar-toggler:focus
+{
+  outline: none;
+}
+.times
+{
+  font-size: 2rem;
+  transition: all .4s;
+  color: black;
+}
+.times:hover
+{
+  font-size: 2rem;
+  transform: rotate(360deg)
+}
+/* Collapse */
+
+@media (max-width: 990px)
+{
+  .logo , .dropdown-item , .form-inline ,.dropdown-menu
+  {
+    display: none !important;
+  }
+  .dropdown
+  {
+    margin-top: 1rem;
+  }
+  
+}
+
+/*===============================start of header=============================*/
+header
+{
+    height: 100vh;
+}
+
+.skitter .label_text h1
+{
+    font-size: 6rem !important;
+}
+
+/*================================start of clothes section================================*/
+
+.clothes
+{
+    background-color: #F0F4F6;
+}
+
+.befor-img
+{
+    background-image: url(../img/world-map-illo.jpg);
+    background-size: cover;
+    height: 50vh;
+    margin: 0.5rem;
+    text-align: center;
+    padding: 7rem;
+}
+.befor-img h5
+{
+    color: #d0693c;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+}
+
+.befor-img p
+{
+    font-size: 1.75rem;
+    font-weight: 100;
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+@media screen and (max-width: 850px)
+{
+    .befor-img p
+    {
+        font-size: 1.1rem;
+    }
+    .befor-img
+    {
+        padding: 5rem;
+    }
+
+}
+
+.left-content
+{
+    padding-top: 10rem;
+}
+.left-content h6
+{
+    color: #d4bf9a;
+    font-size: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.left-content h6::before
+{
+    content: "";
+    position: absolute;
+    background-color: #2f2f39;
+    width: 40px;
+    height: 2px;
+    left: -45px;
+    top: 5px;
+}
+.left-content h4
+{
+    font-family: 'Majesti', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-size: 2rem;
+    line-height: 108%;
+    padding-left: 1rem;
+    margin-bottom: 15px;
+    color: #2f3039;
+    font-family: 'Merriweather', serif;
+}
+.left-content p
+{
+    color: #7f7f7f;
+    letter-spacing: 0.7px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 24px;
+    font-size: 1rem;
+    padding-left: 1rem;
+
+}
+.left-content button
+{
+    background-color: #2f3039;
+    color: #fff;
+    font-size: 11px;
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.left-content button:hover
+{
+    background-color: #80a2b3;
+    color: white;
+}
+
+
+.img-group 
+{
+    width: 20%;
+    float: left;
+    height: 7rem;
+    padding: 5px;
+    cursor: pointer;
+  
+   
+}
+.img-slider
+{
+    position: relative;
+}
+.layer
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background:linear-gradient(90deg, rgba(213, 51, 42,0.6) 0%, rgba(48, 57, 96,0.6) 100% );
+    opacity: 0;
+    transition: 2s;
+   
+}
+
+
+.layer:hover
+{
+    opacity: 1;
+}  
+
+
+.text-onimg h2
+{
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+.text-onimg
+{
+    position: absolute;
+    bottom: 10px;
+    left: -50%;
+    transition: 2s;
+}
+.layer:hover .text-onimg
+{
+    left: 10px;
+}
+.layer a i 
+{
+    font-size: 1.7rem;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+    transition: 2s;
+    position: absolute;
+    left: 50%;
+    top: -50px;
+}
+
+.layer a i:hover
+{
+    
+   
+    color: rgb(48, 57, 96);
+}
+.layer:hover i
+{
+    
+    top:50%;
+   
+}
+
+/*------------------------------------------------end of clothes secrion----------------------------*/
+
+
+/* #################################################################################################### */
+
+.best-selling span
+{
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+.my-card {
+  margin-top: 2rem;
+  border: none ;
+}
+
+.card-title
+{
+  font-size: .9rem;
+  font-weight: bolder;
+}
+
+.amount 
+{
+  font-size: .9rem !important;
+  color: #aaa;
+  font-weight: 400 !important;
+  position: relative;
+}
+
+.amount:after
+{
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height:1px;
+  background-color: #aaa;
+ position: absolute;
+}
+.style-1 
+{ 
+  color: #aaa !important;
+}
+.real-price
+{
+  font-size: 1rem !important;
+  font-size: .9rem !important;
+  position: relative;
+}
+.real-price:after
+{
+  content: "";
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height:1px;
+  background-color: black;
+ position: absolute;
+}
+.card-body
+{
+  line-height: 1.5rem;
+}
+
+.frame {
+	text-align: center;	
+	position: relative;
+	cursor: pointer;	
+	perspective: 500px; 
+}
+.frame .details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:84%;
+	padding: 5% 8%;
+	position: absolute;
+	content: "";
+	top: 41%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotateY(90deg);
+	transform-origin: 50%;
+  background:linear-gradient(90deg, rgb(213, 51, 42 , .5) 0%, rgb(48, 57, 96 , .5) 100% ) ;
+  	opacity: 0;
+	transition: all 0.4s ease-in;
+	
+}
+
+.frame img 
+{
+  box-shadow: 0 14px 28px rgb(213, 51, 42 , .4), 0 10px 10px rgb(48, 57, 96 , .4);
+}
+
+.frame:hover .details {
+	transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+}
+.details span
+{
+  font-size: 1rem;
+}
+.search-icon
+{
+  transition: all .8s;
+  cursor: pointer;
+  padding: .5rem ;
+  border-radius: 50%;
+  background:linear-gradient(90deg, rgb(213, 51, 42 , .7) 0%, rgb(48, 57, 96 , .7) 100% ) ;
+}
+.search-icon:hover
+{
+  color: black !important;
+  background-color: white;
+
+}
+
+@media (max-width:765px)
+{
+  .frame .details{
+    height: 95%;
+    top:48% ;
+  }
+}
+@media (max-width:1200px) and (min-width:767px)
+{
+  .card-body h5 , .card-body span 
+  {
+    font-size: .7rem !important;
+  }
+  .price
+  {
+
+    text-align: left;
+    flex-direction: column;
+  }
+  .price del 
+  {
+    display: none ; 
+  }
+  .margin-0
+  {
+    margin: 0 !important;
+  }
+  .frame .details
+  {
+    height: 76% ;
+    top: 39%;
+
+  }
+
+  
+}
+@media (max-width:1200px) and (min-width:990px)
+{
+  .frame .details
+  {
+    height: 82% ;
+    top: 39%;
+
+  }
+}
+
+
+
+/*==============================start of footer==============================*/
+
+footer
+{
+   
+    background-image: url(../img/heros3.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.upper
+{
+    padding: 2rem;
+}
+
+.upper input
+{
+    background: rgba(0,0,0,0);
+    border-radius: 0px 0px 0px 0px;
+    border-color: rgba(255,255,255,0.34);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    width: 20%;
+    margin-top: 2rem;
+}
+.upper input:focus
+{
+    outline: none;
+}
+.upper h2
+{
+    color: #ffffff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 58px;
+    letter-spacing: 0px;
+
+}
+
+.border-submit button
+{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.border-submit button:hover
+{
+    padding: 0.5rem 1.5rem;
+    border: 3px solid #D70143;
+
+}
+
+.divition h2
+{
+    color: #D70143;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    letter-spacing: 0px;
+    padding-left: 2.7rem;
+    padding-top: 1rem;
+}
+
+.divition ul
+{
+  list-style-type: none;
+}
+
+.divition ul li
+{
+    color: #cfcfcf;
+    text-decoration: none;
+    margin: 10px 0 25px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.divition ul li:hover
+{
+    color: #D70143;
+    padding-left: 1rem;
+}
+
+.divition
+{
+    transition: 2s;
+}
+
+.divition:hover
+{
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.8)
+}
+
+
+
+.footer-icon i
+{
+    padding: 16px;
+    line-height: 0;
+    margin: 0 7px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    transition: .3s border;
+    color: #fff !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 3rem;
+
+}
+
+.footer-icon i:hover
+{
+    border: 1px solid #D70143;
+}
+
+
+.end-footer 
+{
+    padding: 1rem;
+    background-color: #000;
+    
+}
+.left-end-footer ul
+{
+  list-style-type: none;
+
+}
+
+.end-footer p
+{
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.end-footer p span
+{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.end-footer p span:hover
+{
+   color: #D70143;
+}
+
+
+.left-end-footer ul li
+{
+    float: left;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    transition: 1s;
+}
+.left-end-footer ul li:hover
+{
+    color: #D70143;
+}
+
+
+/*-----------------------------end of footer------------------------------------*/
+
