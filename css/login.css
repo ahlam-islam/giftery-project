@@ -1,0 +1,464 @@
+
+
+/* The Nav Bar */
+.my-nav
+{
+  background:linear-gradient(90deg, rgb(213, 51, 42 , .5) 0%, rgb(48, 57, 96 , .5) 100% ) ;
+}
+.searchButton
+{
+  border: none;
+  background-color: transparent;
+}
+
+.searchButton:focus
+{
+
+  background-color: transparent;
+}
+.form-control:focus 
+{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-inline
+{
+  position: relative;
+}
+.form-inline::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: .5px;
+  background-color: white;
+
+}
+input
+{
+  color: white !important;
+}
+input:focus
+{
+  opacity: 70%;
+}
+::placeholder
+{
+  color: white !important;
+}
+.shopping-icon
+{
+  font-size: 23px;
+  color: white;
+}
+.shopping-icon:hover
+{
+  opacity: 60%;
+}
+.sign-icon
+{
+  margin-right:3rem;
+  font-size: 23px;
+  color: white;
+}
+.sign-icon:hover
+{
+  opacity: 60%;
+}
+.dropdown
+{
+  margin-right: 1.5rem;
+}
+.dropdown .nav-link
+{
+  color: white !important;
+  position: relative;
+}
+.dropdown .nav-link::after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:0;
+  height: 2px;
+  /* background-color:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); */
+  transition: all 1s ;
+}
+.dropdown .nav-link:hover::after
+{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Toggle */
+.navbar-toggler
+{
+  border:none;
+  /* box-shadow:1px 1px 5px black; */
+  color: white !important;
+
+}
+.navbar-toggler span
+{
+ color: white !important;
+}
+.navbar-toggler:focus
+{
+  outline: none;
+}
+.times
+{
+  font-size: 2rem;
+  transition: all .4s;
+  color: black;
+}
+.times:hover
+{
+  font-size: 2rem;
+  transform: rotate(360deg)
+}
+/* Collapse */
+
+@media (max-width: 990px)
+{
+  .logo , .dropdown-item , .form-inline ,.dropdown-menu
+  {
+    display: none !important;
+  }
+  .dropdown
+  {
+    margin-top: 1rem;
+  }
+  
+}
+/*========================================end of navbar==================*/
+.move-background
+{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(90deg, rgb(213, 51, 42 , .5) 0%, rgb(48, 57, 96 , .5) 100% ) 
+}
+
+
+
+/*==================================bucket div==================*/
+.bucket-div
+{
+  
+  width: 75%;
+  margin: auto;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translate(-50% , -50%);
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6)
+}
+
+.leftLoginCornar
+{
+  background-image: url("../img/login.jpg");
+  background-position: center center;
+  background-size: cover;
+  clip-path: circle(62.3% at 35% 32%);
+}
+
+
+.form-contant p
+{
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat Alternates', sans-serif;
+
+
+}
+
+.form-contant h3
+{
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Sriracha', cursive;
+
+}
+
+.input-group input
+{
+  
+  background: rgba(0,0,0,0);
+  border-radius: 0px 0px 0px 0px;
+  border-color: rgba(255,255,255,0.34);
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  margin-top: 1rem;
+  font-family: 'Bellota', cursive;
+}
+
+.input-group input:focus
+{
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+
+.input-group button
+{
+  background:linear-gradient(90deg, rgb(213, 51, 42 ) 0%, rgb(48, 57, 96 ) 100% ) !important;
+  border: inherit;
+}
+
+.input-group label
+{
+    color: #fff;
+    font-family: 'Bellota', cursive;
+    margin-bottom: 1rem;
+
+}
+
+
+
+.input-group button:focus
+{
+  outline: none;
+  border: inherit;
+}
+
+
+@media screen and (max-width: 800px)
+{
+  .leftLoginCornar
+{
+
+  clip-path:none;
+  height: 100%;
+  width: 50%;
+}
+
+  .form-contant h3
+  {
+    font-size: 1.4rem;
+  }
+  .input-group input
+    {
+   
+      margin-top: 0.5rem;
+      font-size: 0.6 !important;
+     
+    }
+    .form-contant p
+      {
+      
+        font-size: 0.6rem;
+
+      }
+   
+
+}
+
+@media screen and (max-width: 570px)
+{
+  .leftLoginCornar
+  {
+  
+   display: none;
+  }
+
+}
+
+.loginLink
+{
+  text-transform: none;
+  font-family: 'Bellota', cursive;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: 1s;
+}
+
+
+/*==============================start of footer==============================*/
+
+footer
+{
+   
+    background-image: url(../img/heros3.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.upper
+{
+    padding: 2rem;
+}
+
+.upper input
+{
+    background: rgba(0,0,0,0);
+    border-radius: 0px 0px 0px 0px;
+    border-color: rgba(255,255,255,0.34);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    width: 20%;
+    margin-top: 2rem;
+}
+.upper input:focus
+{
+    outline: none;
+}
+.upper h2
+{
+    color: #ffffff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 58px;
+    letter-spacing: 0px;
+
+}
+
+.border-submit button
+{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.border-submit button:hover
+{
+    padding: 0.5rem 1.5rem;
+    border: 3px solid #D70143;
+
+}
+
+.divition h2
+{
+    color: #D70143;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    letter-spacing: 0px;
+    padding-left: 2.7rem;
+    padding-top: 1rem;
+}
+
+.divition ul
+{
+  list-style-type: none;
+}
+
+.divition ul li
+{
+    color: #cfcfcf;
+    text-decoration: none;
+    margin: 10px 0 25px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.divition ul li:hover
+{
+    color: #D70143;
+    padding-left: 1rem;
+}
+
+.divition
+{
+    transition: 2s;
+}
+
+.divition:hover
+{
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.8)
+}
+
+
+
+.footer-icon i
+{
+    padding: 16px;
+    line-height: 0;
+    margin: 0 7px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    transition: .3s border;
+    color: #fff !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 3rem;
+
+}
+
+.footer-icon i:hover
+{
+    border: 1px solid #D70143;
+}
+
+
+.end-footer 
+{
+    padding: 1rem;
+    background-color: #000;
+    
+}
+.left-end-footer ul
+{
+  list-style-type: none;
+
+}
+
+.end-footer p
+{
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.end-footer p span
+{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.end-footer p span:hover
+{
+   color: #D70143;
+}
+
+
+.left-end-footer ul li
+{
+    float: left;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    transition: 1s;
+}
+.left-end-footer ul li:hover
+{
+    color: #D70143;
+}
+
+
+/*-----------------------------end of footer------------------------------------*/
+
