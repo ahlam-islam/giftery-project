@@ -159,7 +159,8 @@ input:focus
   position: absolute;
   top: 65%;
   left: 50%;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6)
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  
 }
 
 .leftLoginCornar
@@ -169,6 +170,7 @@ input:focus
   background-size: cover;
   clip-path: circle(62.3% at 35% 32%);
 }
+
 
 
 .form-contant p
