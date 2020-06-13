@@ -4,6 +4,7 @@
 .my-nav
 {
   background:linear-gradient(90deg, rgb(213, 51, 42 , .5) 0%, rgb(48, 57, 96 , .5) 100% ) ;
+  z-index: 999999999999999999999 ; 
 }
 .searchButton
 {

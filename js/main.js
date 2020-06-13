@@ -61,5 +61,64 @@ $(".arrow-up").click(function () {
     $("html , body").animate({scrollTop: '0'} , 1000)
 })
 
+/* ####################################### video ######################################### */
 
+$('.close-video').click(function () { 
+
+  $('#video-layout').addClass('dis-none');
+  $('#video-layout').removeClass('dis-flex');
+  $('body').removeClass('overFlow');
+});
+
+
+
+$('#open-layout').click(function () { 
+  
+  $('#video-layout').addClass('dis-flex');
+  $('body').addClass('overFlow');
+});
+
+
+/* ####################################### Accessories ######################################### */
+
+
+$('.owl-carousel').owlCarousel({
+  loop: true,
+  
+  margin: 20,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  autoplay: 3000,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 5
+    }
+  }
+})
+
+$(document).ready(function() {
  
+  var owl = $("#owl-demo");
+ 
+  owl.owlCarousel();
+ 
+  // Custom Navigation Events
+  $(".next").click(function(){
+    owl.trigger('owl.next');
+  })
+  $(".prev").click(function(){
+    owl.trigger('owl.prev');
+  })
+ 
+});

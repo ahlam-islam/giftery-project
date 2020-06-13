@@ -33,14 +33,14 @@ body
     font-size: 1.3rem;
 }
 
+/* ###################################################### NavBar BEGIN ######################################################*/
 
-
-/* The Nav Bar */
 .my-nav
 {
- 
+  position: fixed;
+  width: 100%;
   background-color: transparent;
-  z-index: 1500;
+  z-index: 9999999;
 }
 .searchButton
 {
@@ -144,6 +144,7 @@ input:focus
   color: white !important;
 
 }
+
 .navbar-toggler span
 {
  color: white !important;
@@ -163,6 +164,7 @@ input:focus
   font-size: 2rem;
   transform: rotate(360deg)
 }
+
 /* Collapse */
 
 @media (max-width: 990px)
@@ -175,8 +177,40 @@ input:focus
   {
     margin-top: 1rem;
   }
-  
+  .video-img i {
+
+    padding: .7rem !important;
+    font-size: 1rem !important;
+
+  }  
 }
+
+.slider-layout 
+{
+  position: relative;
+  transition: all 1s;
+}
+.slider-layout:hover 
+{
+  box-shadow: 0 14px 28px rgb(213, 51, 42 , .4), 0 10px 10px rgb(48, 57, 96 , .4);
+}
+.slider-layout:hover .drag-layer
+{
+  opacity: 0;
+}
+.drag-layer
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background:linear-gradient(90deg, rgb(213, 51, 42 , .7) 0%, rgb(48, 57, 96 , .7) 100% ) ;
+  opacity: .8;
+  transition: all 1s;
+}
+
+/* ###################################################### NavBar END ######################################################*/
+
 
 /*===============================start of header=============================*/
 header
@@ -189,6 +223,24 @@ header
     font-size: 6rem !important;
 }
 
+.befor-img h5 
+{
+  font-weight: bolder;
+  position: relative;
+  display: inline;
+}
+
+.befor-img h5::after
+{
+  content: '';
+  text-align: center;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width:100%;
+  height: 1.5px;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+}
 /*================================start of clothes section================================*/
 
 .clothes
@@ -254,7 +306,7 @@ header
 {
     content: "";
     position: absolute;
-    background-color: #2f2f39;
+    background:linear-gradient(90deg, rgba(213, 51, 42,0.6) 0%, rgba(48, 57, 96,0.6) 100% );
     width: 40px;
     height: 2px;
     left: -45px;
@@ -309,6 +361,10 @@ header
    
 }
 .img-slider
+{
+    position: relative;
+}
+.img-slider:hover
 {
     position: relative;
 }
@@ -378,8 +434,244 @@ header
 
 /*------------------------------------------------end of clothes secrion----------------------------*/
 
+/* ###################################################### Video BEGIN ######################################################*/
 
-/* #################################################################################################### */
+
+#video-sec h2 
+{
+  font-weight: bolder;
+  position: relative;
+  display: inline;
+}
+
+#video-sec h2::after
+{
+  content: '';
+  text-align: center;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width:100%;
+  height: 1.5px;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+}
+.video-img
+{
+  width: 70%;
+  margin: auto;
+  position: relative;
+}
+.video-img i 
+{
+  position: absolute;
+  top: 50%;
+  left: 46%;
+  z-index: 23;
+  font-size: 2rem;
+  color: #fff;
+  padding: 1rem 1rem;
+  padding-left: 1.3rem;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+  border-radius:50% ;
+  cursor: pointer;  
+  transition: all .8s;
+}
+.video-img i:hover 
+{
+ 
+  background:linear-gradient(90deg, rgb(213, 51, 42 , .7) 0%, rgb(48, 57, 96 , .7) 100% ) ;
+  color:rgb(146, 135, 135) ; 
+}
+#video-sec img{
+  box-shadow: 0 14px 28px rgb(213, 51, 42 , .4), 0 10px 10px rgb(48, 57, 96 , .4);
+  width: 100%;
+}
+
+#video-layout
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999999999999;
+}
+
+.dis-none{
+  display: none !important;
+}
+.dis-flex{
+  display: flex !important;
+}
+.overFlow 
+{
+  overflow: hidden;
+}
+.close-video
+{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  
+}
+.close-video i {
+  color: white;
+  padding: 1rem 1.2rem;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+  border-radius: 50%;
+  transition: all 0.3s;
+
+}
+
+.close-video i:hover 
+{
+  box-shadow: 0 14px 28px rgba(114, 27, 22, 0.4), 0 10px 10px rgb(48, 57, 96 , .4);
+  transform: rotate(360deg);
+  color:rgb(146, 135, 135) ; 
+}
+
+
+
+
+/* ###################################################### vedio End ######################################################*/
+
+/* ###################################################### Accessories BEGIN ######################################################*/
+
+
+
+
+/* ###################################################### Accessories END ######################################################*/
+.accessories h2 
+{
+  font-weight: bolder;
+  position: relative;
+  display: inline;
+}
+
+.accessories h2::after
+{
+  content: '';
+  text-align: center;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width:100%;
+  height: 2px;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+}
+
+.Acc
+{
+  background-color: #F0F4F6;
+}
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 30px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+.b-none
+{
+  border: none !important;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+.Acc .item 
+{
+  cursor: pointer;
+  position: relative;
+}
+.Acc span 
+{
+
+  font-size:.9rem;
+  font-weight: bolder;
+  color: black;
+}
+.slider-text
+{
+  margin-top: .6rem;
+}
+.Acc a 
+{
+  color:white ;
+  font-size: 1.2rem;
+  padding:.5rem 2.2rem;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0);
+  margin-bottom: 1rem;
+}
+.Acc a:hover 
+{
+ background-color: #80A2B3;
+}
+#owl-demo .item{
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.Acc button:hover
+{
+  background: none !important;
+  
+}
+
+.Acc i:hover
+{
+  color: #80A2B3;
+
+}
+
+/* ###################################################### Accessories BEGIN ######################################################*/
+
+.Sales-header{
+  position: relative;
+}
+.Sales-header::after
+{
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
+  bottom: -10px;
+  left: 0;
+  position: absolute;
+}
 
 .best-selling span
 {
@@ -540,6 +832,7 @@ header
 }
 
 
+/* ###################################################### Sales End ######################################################*/
 
 /*==============================start of footer==============================*/
 
@@ -717,4 +1010,6 @@ footer
 
 
 /*-----------------------------end of footer------------------------------------*/
+
+/*####################################### Customize NavBar #######################################*/
 
