@@ -226,21 +226,9 @@ header
 .befor-img h5 
 {
   font-weight: bolder;
-  position: relative;
   display: inline;
 }
 
-.befor-img h5::after
-{
-  content: '';
-  text-align: center;
-  position: absolute;
-  bottom: -10px;
-  left: 0px;
-  width:100%;
-  height: 1.5px;
-  background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
-}
 /*================================start of clothes section================================*/
 
 .clothes
@@ -439,9 +427,14 @@ header
 
 #video-sec h2 
 {
-  font-weight: bolder;
+  font-family: 'Majesti', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 2rem;
+  line-height: 108%;
+  padding-left: 1rem;
+  margin-bottom: 15px;
+  color: #2f3039;
+  font-family: 'Merriweather', serif;
   position: relative;
-  display: inline;
 }
 
 #video-sec h2::after
@@ -450,8 +443,8 @@ header
   text-align: center;
   position: absolute;
   bottom: -10px;
-  left: 0px;
-  width:100%;
+  left: 45%;
+  width:10%;
   height: 1.5px;
   background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
 }
@@ -547,9 +540,14 @@ header
 /* ###################################################### Accessories END ######################################################*/
 .accessories h2 
 {
-  font-weight: bolder;
+  font-family: 'Majesti', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 2rem;
+  line-height: 108%;
+  padding-left: 1rem;
+  margin-bottom: 15px;
+  color: #2f3039;
+  font-family: 'Merriweather', serif;
   position: relative;
-  display: inline;
 }
 
 .accessories h2::after
@@ -558,8 +556,8 @@ header
   text-align: center;
   position: absolute;
   bottom: -5px;
-  left: 0px;
-  width:100%;
+  left: 43%;
+  width:15%;
   height: 2px;
   background:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); 
 }
@@ -625,12 +623,15 @@ header
 }
 .Acc a 
 {
-  color:white ;
-  font-size: 1.2rem;
-  padding:.5rem 2.2rem;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0);
-  margin-bottom: 1rem;
+  background-color: #2f3039;
+    color: #fff;
+    font-size: 11px;
+    padding: 0.8rem;
+    letter-spacing: 2px;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    font-family: 'Montserrat Alternates', sans-serif;
+
 }
 .Acc a:hover 
 {
@@ -661,6 +662,14 @@ header
 
 .Sales-header{
   position: relative;
+  font-family: 'Majesti', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 1.5rem;
+  line-height: 108%;
+  padding-left: 1rem;
+  margin-bottom: 15px;
+  color: #2f3039;
+  font-family: 'Merriweather', serif;
+  position: relative;
 }
 .Sales-header::after
 {
@@ -675,8 +684,14 @@ header
 
 .best-selling span
 {
-  font-weight: bolder;
+  font-family: 'Majesti', 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   font-size: 1.5rem;
+  line-height: 108%;
+  padding-left: 1rem;
+  margin-bottom: 15px;
+  color: #2f3039;
+  font-family: 'Merriweather', serif;
+  position: relative;
 }
 .my-card {
   margin-top: 2rem;
