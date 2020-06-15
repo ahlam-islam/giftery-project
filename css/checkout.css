@@ -1,0 +1,667 @@
+/* ######################################### Utility Classes  #############################################*/
+
+
+body 
+{
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+  background: linear-gradient(90deg, rgba(213, 51, 42, 0.5) 0%, rgba(48, 57, 96, 0.5) 100%);
+
+}
+a , button
+{
+  text-decoration: none !important;
+}
+
+/* ######################################### NavBar Begin  #############################################*/
+.my-nav
+{
+background-color: transparent;    
+
+}
+.searchButton
+{
+  border: none;
+  background-color: transparent;
+}
+
+.searchButton:focus
+{
+
+  background-color: transparent;
+}
+.form-control:focus 
+{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.form-inline
+{
+  position: relative;
+}
+.form-inline::after
+{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: .5px;
+  background-color: white;
+
+}
+input
+{
+  color: white !important;
+}
+input:focus
+{
+  opacity: 70%;
+}
+::placeholder
+{
+  color: white !important;
+}
+.shopping-icon
+{
+  font-size: 23px;
+  color: white;
+}
+.shopping-icon:hover
+{
+  opacity: 60%;
+}
+.sign-icon
+{
+  margin-right:3rem;
+  font-size: 23px;
+  color: white;
+}
+.sign-icon:hover
+{
+  opacity: 60%;
+}
+.dropdown
+{
+  margin-right: 1.5rem;
+}
+.dropdown .nav-link
+{
+  color: white !important;
+  position: relative;
+}
+.dropdown .nav-link::after
+{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width:0;
+  height: 2px;
+  /* background-color:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); */
+  transition: all 1s ;
+}
+.dropdown .nav-link:hover::after
+{
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Toggle */
+.navbar-toggler
+{
+  border:none;
+  /* box-shadow:1px 1px 5px black; */
+  color: white !important;
+
+}
+.navbar-toggler span
+{
+ color: white !important;
+}
+.navbar-toggler:focus
+{
+  outline: none;
+}
+.times
+{
+  font-size: 2rem;
+  transition: all .4s;
+  color: black;
+}
+.times:hover
+{
+  font-size: 2rem;
+  transform: rotate(360deg)
+}
+/* Collapse */
+
+@media (max-width: 990px)
+{
+  .logo , .dropdown-item , .form-inline ,.dropdown-menu
+  {
+    display: none !important;
+  }
+  .dropdown
+  {
+    margin-top: 1rem;
+  }
+  
+}
+/* ######################################### NavBar Begin  #############################################*/
+
+
+
+/*==============================start of footer==============================*/
+
+footer
+{
+   
+    background-image: url(../img/heros3.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.upper
+{
+    padding: 2rem;
+}
+
+.upper input
+{
+    background: rgba(0,0,0,0);
+    border-radius: 0px 0px 0px 0px;
+    border-color: rgba(255,255,255,0.34);
+    border-width: 0px 0px 2px 0px;
+    border-style: solid;
+    width: 20%;
+    margin-top: 2rem;
+}
+.upper input:focus
+{
+    outline: none;
+}
+.upper h2
+{
+    color: #ffffff;
+    font-family: 'Overpass', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+    text-transform: capitalize;
+    line-height: 58px;
+    letter-spacing: 0px;
+
+}
+
+.border-submit button
+{
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 1s;
+}
+
+.border-submit button:hover
+{
+    padding: 0.5rem 1.5rem;
+    border: 3px solid #D70143;
+
+}
+
+.divition h2
+{
+    color: #D70143;
+    font-family: "Roboto Condensed", Sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+    letter-spacing: 0px;
+    padding-left: 2.7rem;
+    padding-top: 1rem;
+}
+
+.divition ul
+{
+  list-style-type: none;
+}
+
+.divition ul li
+{
+    color: #cfcfcf;
+    text-decoration: none;
+    margin: 10px 0 25px 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.divition ul li:hover
+{
+    color: #D70143;
+    padding-left: 1rem;
+}
+
+.divition
+{
+    transition: 2s;
+}
+
+.divition:hover
+{
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.8)
+}
+
+
+
+.footer-icon i
+{
+    padding: 16px;
+    line-height: 0;
+    margin: 0 7px;
+    display: inline-block;
+    border-radius: 100%;
+    border: 1px solid #fff;
+    transition: .3s border;
+    color: #fff !important;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 1s;
+    margin-bottom: 3rem;
+
+}
+
+.footer-icon i:hover
+{
+    border: 1px solid #D70143;
+}
+
+
+.end-footer 
+{
+    padding: 1rem;
+    background-color: #000;
+    
+}
+.left-end-footer ul
+{
+  list-style-type: none;
+
+}
+
+.end-footer p
+{
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.end-footer p span
+{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.end-footer p span:hover
+{
+   color: #D70143;
+}
+
+
+.left-end-footer ul li
+{
+    float: left;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+    color: #ffffff;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    transition: 1s;
+}
+.left-end-footer ul li:hover
+{
+    color: #D70143;
+}
+
+
+/*-----------------------------end of footer------------------------------------*/
+
+
+
+/* ###################################### Form BEGIN ##################################################### */
+
+#addToCart a , #addToCart i 
+{
+  color: rgb(255, 255, 255) !important;
+  font-size: 1.5rem;
+
+}
+
+#addToCart a.checkLink
+{
+  color: #000 !important;
+  letter-spacing: .2rem;
+}
+label
+{
+  color: #624d50;
+  font-size: 1rem !important;
+}
+.Cart-form h4 
+{
+  color: #624d50 !important;
+}
+.Collap button 
+{
+  font-size: .9rem !important;
+  color: black;
+  line-height: 0 !important;
+
+
+}
+.collapse1 button 
+{
+
+  background: linear-gradient(90deg, rgb(202, 90, 85) 0%, rgb(78, 88, 133) 100%);
+
+}
+
+.card-header
+{
+  background-color : white !important ;
+}
+.card 
+{
+  border: none ;
+}
+.collapse1
+{
+  font-size : .9rem ; 
+  text-align: left;
+  margin: 1rem 0 0 2rem; 
+  font-weight: bolder;
+}
+input ,textarea ,select 
+{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+
+.Collap input:focus , .main-form input:focus , .main-form textarea:focus
+{
+  color: #fff !important;
+
+}
+.test , .test2 , .test3{ 
+  position: relative;
+}
+.test::after
+{ 
+  content: "";
+  width: 100%;
+  height: 1.2px;
+  background-color: #fff;
+  bottom:-5;
+  right: 0;
+
+  position: absolute;
+}
+.test2::after
+{ 
+  content: "";
+  width: 90%;
+  height: .5px;
+  background-color: #fff;
+  bottom:-5;
+  left: 0;
+  position: absolute;
+}
+.test3::after
+{ 
+  content: "";
+  width: 100%;
+  height: .5px;
+  background-color: #fff;
+  bottom:-5;
+  left: 0;
+  position: absolute;
+}
+.couBtn
+{
+  padding: 1.3rem 2rem !important ;
+}
+
+.Collap input::placeholder , .main-form input::placeholder , .main-form textarea::placeholder
+{
+  color: rgba(255, 255, 255)!important;
+  font-size: 1rem;
+  
+}
+.Collap span{
+  font-size: 1.1rem !important;
+}
+.pass label 
+{
+  font-size:1rem ;
+}
+.collapse1 button
+{
+  padding:1rem 2rem;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  border: none;
+  transition: all .7s;
+
+}
+
+.collapse1 a.setPass
+{
+  font-size: 1.5rem !important;
+  margin-top: 1rem;
+
+}
+
+.collapse1 a.setPass::after
+{
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width:0;
+  height: 2px;
+  /* background-color:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); */
+  transition: all 1s ;
+}
+.collapse1 a.setPass:hover::after
+{
+  content: '';
+  width: 25%;
+  height: 2px;
+  background-color: white;
+}
+
+
+.color-blue
+{
+  color: white;
+}
+
+.input-group-text
+{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.Collap
+{
+  margin-left: -13px;
+}
+/* ########################################## CART FORM ########################################## */
+.Cart-form
+{
+  position: relative;
+}
+.Cart-form::before
+{
+  content: "";
+  position: absolute;
+  margin-left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color:#624d50 !important;
+  top: -20px;
+  left: 17px;
+}
+.color-brown
+{
+  color:#624d50 !important;
+
+}
+
+.main-form label 
+{
+  font-size: .8rem;
+  font-weight: bolder;
+}
+.Cart-form h4 
+{
+  font-size: 1.2rem;
+  font-weight: bolder;
+
+}
+.main-form input 
+{
+  font-size: .8rem;
+}
+select{
+  cursor: pointer;
+}
+
+.main-form textarea
+{
+  text-align: left;
+
+}
+canvas
+{
+  position: fixed;
+}
+.card-header , #collapseOne  , #collapseTwo 
+{
+
+  background: linear-gradient(90deg, rgba(213, 51, 42, 0.4) 0%, rgba(48, 57, 96, 0.5) 100%);
+  
+}
+#addToCart .container a
+{
+  font-family: 'Sriracha', cursive;
+  letter-spacing: .2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+#addToCart .container
+{
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 25px ;
+  background-color: transparent !important  ;
+}
+.headerone:hover
+{
+  color: rgba(0, 0, 0, 0.6);
+}
+.headerone
+{
+  color: rgba(0, 0, 0, 1);
+}
+.accordion
+{
+  margin-right: -.9rem;
+  margin-left: -.2rem;
+}
+#addToCart a.checkLink{
+  color:#624D50 !important;
+}
+
+/* ########################################## Side Panel ########################################## */
+
+.sidePanel
+{
+  border:solid rgb(98,77,80) 2px ;
+  height: 100%;
+}
+
+.sidePanel h5
+{
+  font-size :1.5rem;
+  font-weight: bold;
+  color: white;
+}
+.sidePanel .headings , .sidePanel .headings2 
+{
+  font-weight: bolder;
+  font-size: 1.1rem;
+  color: rgb(80, 69, 71);
+  position: relative;
+}
+.sidePanel .headings::after
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  bottom: -5px;
+  left: 0;
+
+}
+.sidePanel .headings2::before
+{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  top:-10px;
+  left: 0;
+
+}
+
+.products span
+{
+  
+  font-weight: bold;
+  color: rgb(80, 69, 71);
+  font-size: 1.1rem;
+}
+.prices
+{
+  color: #fff;
+  font-size: 1.1rem;
+
+}
+
+.paying
+{
+  text-align: left;
+  margin-top: 1.6rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: rgb(80, 69, 71);
+}
+.sidePanel label{
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+
+
+
+

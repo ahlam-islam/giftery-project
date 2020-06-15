@@ -122,3 +122,11 @@ $(document).ready(function() {
   })
  
 });
+/*  ##########################################  Loading ################################### */
+
+$(document).ready(function () {
+  $('#loading').fadeOut(5000, function () {
+
+    $('body').removeClass('overFlow');
+  });
+});
