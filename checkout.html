@@ -3,16 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/all.css">
+ 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&family=Dancing+Script&family=Merriweather:ital@1&family=Montserrat+Alternates:wght@100;300&family=Sofia&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Overpass:ital,wght@0,900;1,600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="css/skitter.css">
+ <link rel="stylesheet" href="css/all.css">
+ <link href="https://fonts.googleapis.com/css2?family=Arapey&family=Merienda&family=Noto+Sans&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/checkout.css">
   <title>Checkout</title>
 </head>
@@ -29,7 +24,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="#"><i class="fas fa-user-plus sign-icon"></i></a>
+    <a href="singin.html"><i class="fas fa-user-plus sign-icon"></i></a>
     <a href="#"><i class="fas fa-shopping-bag shopping-icon"></i></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -43,45 +38,34 @@
           <ul class="navbar-nav m-auto text-center pl-4">
 
             <!-- Drop Down -->
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="index.html" >
+                Home
+              </a>
+            </li>
              <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="all prodect.html" >
                 Cloths
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
             </li>
              <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="all prodect.html" >
                 Shoes
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+           
             </li>
              <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="all prodect.html" >
                 Accessories
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
             </li>
              <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="singin.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Contact
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-            </li>
-             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sale
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="singin.html">sign in</a>
+                <a class="dropdown-item" href="login.html">log in</a>
             </li>
           </ul>
         </div>
@@ -111,10 +95,10 @@
    <section id="addToCart" class="my-5">
 
 
-    <div class="container text-center p-3">
+    <div class="container text-center p-3 ">
 
       <!-- Heading -->
-      <div>
+      <div class="heading-tital">
         <a href="#">SHOPPING CART</a>
         <i class="fas fa-angle-right"></i>
         <a href="#" class="checkLink">CHECKOUT DETAILS</a>
@@ -132,7 +116,7 @@
             <div class="card-header" id="headingOne">
               <h2 class="mb-0">
 
-                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn btn-link btn-block text-left rounded-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   <span class="headerone">Returning customer?</span> <span class="color-blue">Click here to login </span>
                 </button>
               </h2>
@@ -143,7 +127,7 @@
 
               <div class="collapse1">
 
-               <span class="color-brown"> If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.
+               <span class="color-brown"> If you have shopped with us before, please enter your details below. If you are a new customer,<br> please proceed to the Billing section.
               </span>
 
 
@@ -172,7 +156,7 @@
                      </div>
                   </div>
                   <button type="submit" name="login" value="Login">Login</button>
-                  <a href="resetPass.html" target="_blank" class="d-block setPass">Lost your password?</a>
+                  <a href="resetPass.html" target="_blank" class="d-block setPass">forget your password?</a>
                 </div>
 
               </form>
@@ -217,22 +201,27 @@
 
 
 
+
+      <!--##############################################################################################################-->
+        
+          <span class="text-center center-line">OR</span>
+
       <!-- ################################## FORM ################################## -->
-      <div class="row">
+      <div class="row mt-5 ">
       <div class="col-md-6 Cart-form">
 
-        <h4 class="text-left">BILLING DETAILS</h4>
+        <h4 class="text-center mb-5 ">BILLING DETAILS</h4>
 
         <!-- THE FORM -->
 
-        <form class="text-left mt-4 main-form">
+        <form class="text-left pt-5 main-form">
 
           <div class="row">
 
             <div class="col-md-6">
               <label class="text-left">First name *</label>
               <div class="test">
-                <input type="text" name="userFName" class="form-control"  placeholder="Enter Your First Name" required >
+                <input type="text" name="userFName" class="form-control"  placeholder=" First Name" required >
 
               </div>
             </div>
@@ -241,21 +230,21 @@
               <label class="text-left">Last name *</label>
 
               <div class="test">
-                <input type="text" name="userLName" class="form-control"  placeholder="Enter Your Last Name" required >
+                <input type="text" name="userLName" class="form-control"  placeholder=" Last Name" required >
               </div>
             </div>
 
           </div>
 
 
-          <div class="mt-4">
+          <div class="pt-5">
             <label class="text-left">Company name (optional)</label>
             <div class="test3">
               <input type="text" name="companyName" class="form-control" >
             </div>
           </div>
 
-          <div class="form-group mt-4 test">
+          <div class="form-group py-5 test">
             <label>Country / Region *</label>
             <select class="form-control">
               <option selected >United States (US)</option>
@@ -272,12 +261,14 @@
 
         <div class="row">
 
-            <div class="col-md-6">
+            <div class="col-md-6 ">
               <label class="text-left">Street address *</label>
               <div class="test3">
                 <input type="text" name="userStreet" class="form-control"  placeholder="House and street number" required >
               </div>
             </div>
+
+
 
             <div  class="col-md-6">
               <label class="text-left">Apartment</label>
@@ -288,7 +279,7 @@
 
           </div>
 
-          <div class="mt-4">
+          <div class="pt-5">
             <label class="text-left">Town / City *</label>
             <div class="test">
               <input type="text" name="userTown" class="form-control" required>
@@ -296,7 +287,7 @@
           </div>
 
 
-          <div class="form-group mt-4 test3">
+          <div class="form-group pt-5 test3">
             <label>State *</label>
             <select class="form-control" required>
               <option selected >New York</option>
@@ -312,7 +303,7 @@
 
 
 
-          <div class="mt-4">
+          <div class="pt-5">
             <label class="text-left">ZIP *</label>
             <div class="test">
               <input type="number" name="userZip" class="form-control" required>
@@ -320,21 +311,21 @@
           </div>
 
 
-          <div class="mt-4">
+          <div class="pt-5">
             <label class="text-left">Phone *</label>
             <div class="test">
               <input type="number" name="userPhone" class="form-control" required>
             </div>
           </div>
 
-          <div class="mt-4">
+          <div class="pt-5">
             <label class="text-left">Email address *</label>
             <div class="test3">
               <input type="email" name="userEmail" class="form-control" placeholder="name@example.com" required>
             </div>
           </div>
 
-          <div class="mt-4" >
+          <div class="pt-5" >
             <label >Order notes (optional)</label>
             <div class="test">
               <textarea name="userMessage" rows="5" placeholder="Leave some Notes" class="form-control"></textarea>
@@ -343,7 +334,7 @@
 
 
 
-          <div class="form-group mt-4 test">
+          <div class="form-group pt-5 test">
             <label>How did you learn about our existence in this universe? *</label>
             <select class="form-control" required>
               <option selected class="">--Choose an option--</option>
@@ -363,9 +354,8 @@
 
       <div class="offset-1"></div>
       <!-- ################################## side Pannel ################################## -->
-      <div class="col-md-4 sidePanel ">
-        <h5 class="text-left mt-3">YOUR ORDER
-        </h5>
+      <div class="col-md-4 sidePanel">
+        <h5 class="text-center py-5">YOUR ORDER</h5>
 
         <div class="d-flex justify-content-between mt-3 headings">
           <div>
@@ -405,8 +395,8 @@
       <span>1500$</span>
     </div>
   </div>  
-  <div class="paying">
-    <span>Credit Card (Stripe) </span>
+  <div class="paying  pt-5">
+    <span class="text-center">Credit Card (Stripe) </span>
   </div>
 
     <form >
@@ -415,27 +405,27 @@
         <div class="col-md-12">
           <label class="text-left">Card Number</label>
           <div class="test3">
-            <input type="text" class="form-control"  placeholder="1234 1234 1234" required >
+            <input type="text" class="form-control rounded-0"  placeholder="1234 1234 1234" required >
           </div>
         </div>
 
         <div  class="col-md-12  mt-5">
           <label class="text-left">Expiry Date</label>
           <div class="test3">
-            <input type="text"  class="form-control"  placeholder="MM / YY" >
+            <input type="text"  class="form-control rounded-0"  placeholder="MM / YY" >
           </div>
         </div>
 
         <div  class="col-md-12  my-5">
           <label class="text-left">Card Code</label>
           <div class="test3">
-            <input type="text" class="form-control"  placeholder="CVC" >
+            <input type="text" class="form-control rounded-0"  placeholder="CVC" >
           </div>
         </div>
 
       </div>
 
-      <button type="submit" class="btn btn-dark w-100 mb-5 rounded-0">PLACE ORDER</button>
+      <button type="submit" class="btn btn-block mb-5 rounded-0 orderd-btn">PLACE ORDER</button>
 
     </form>
       </div>

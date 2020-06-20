@@ -110,6 +110,27 @@ input:focus
   background-color: white;
 }
 
+.dropdown-menu 
+{
+  background:linear-gradient(90deg, rgba(213, 51, 42 , 0.3) 0%, rgba(48, 57, 96 , 0.3) 100% );
+  border: none;
+}
+
+.dropdown-menu .dropdown-item
+{
+  color: white;
+  font-family: 'Arapey', serif;
+  font-size: 1.1rem;
+
+}
+
+.dropdown-menu .dropdown-item:hover
+{
+  color: black;
+}
+
+
+
 /* Toggle */
 .navbar-toggler
 {
@@ -152,6 +173,351 @@ input:focus
   
 }
 /* ######################################### NavBar Begin  #############################################*/
+
+
+
+
+
+
+/* ###################################### Form BEGIN ##################################################### */
+
+.heading-tital a , .heading-tital i 
+{
+  color: #000 !important;
+  font-size: 1.5rem !important;
+
+}
+
+.heading-tital a
+{
+  font-family: 'Merienda', cursive !important;
+}
+
+.heading-tital a.checkLink
+{
+  color: #D70143 !important;
+}
+
+
+.Collap button 
+{
+  font-size: .9rem !important;
+  color: black;
+  line-height: 0 !important;
+
+
+}
+.collapse1 button 
+{
+
+  background: linear-gradient(90deg, rgb(202, 90, 85) 0%, rgb(78, 88, 133) 100%);
+
+}
+
+.card-header
+{
+  background-color : white !important ;
+}
+.card 
+{
+  border: none ;
+}
+.collapse1
+{
+  font-size : .9rem ; 
+  text-align: left;
+  margin: 1rem 0 0 2rem; 
+  font-weight: bolder;
+}
+.Collap input , .main-form input , .main-form textarea 
+{
+  
+  border: 0.01rem solid #eee !important;
+  border-radius: 0% !important;
+}
+
+
+.Collap input:focus , .main-form input:focus , .main-form textarea:focus
+{
+  color: #333 !important;
+  font-size: 0.9rem;
+  border: 1px solid #D70143 !important;
+
+}
+
+.Collap input , .main-form input , .main-form textarea 
+{
+  padding: 1.4rem 0.6rem !important;
+}
+
+.couBtn
+{
+  padding: 1.3rem 2rem !important ;
+}
+
+.Collap input::placeholder , .main-form input::placeholder , .main-form textarea::placeholder
+{
+  color: #595959 !important;
+  font-size: 0.98rem !important;
+  font-family: 'Arapey', serif;
+  
+}
+
+
+.collapse1 button
+{
+  padding:1.5rem 4rem;
+  background-color: rgba(0, 0, 0);
+  color: white;
+  font-size: 1.2rem !important;
+  font-weight: 600;
+  border: none;
+  transition: all .7s;
+
+}
+
+.collapse1 a.setPass
+{
+  font-size: 1rem ;
+  margin-top: 1rem ;
+  font-family: 'Arapey', serif ;
+  text-transform: capitalize;
+
+}
+
+
+
+.color-blue
+{
+  color: #D70143;
+  font-family: 'Arapey', serif;
+  font-size: 0.9rem !important;
+  text-transform: capitalize;
+}
+
+.input-group-text
+{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.Collap
+{
+  margin-left: -13px;
+}
+/* ########################################## CART FORM ########################################## */
+.center-line
+{
+  font-family: 'Arapey', serif;
+  font-size: 0.9rem;
+  color: #595959;
+  position: relative;
+}
+
+.center-line::after
+{
+  content: " ";
+  width: 500px;
+  height: 1px;
+  background-color: #cccccc !important;
+  position: absolute;
+  right: 110%;
+  bottom: 6px;
+}
+.center-line::before
+{
+  content: " ";
+  width: 500px;
+  height: 1px;
+  background-color: #cccccc !important;
+  position: absolute;
+  left:110%;
+  bottom: 6px;
+}
+
+
+
+.color-brown
+{
+  font-size: 1.2rem !important;
+  color: #595959;
+  line-height: 2.5rem !important;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: capitalize;
+  word-spacing: 3px;
+
+}
+
+.main-form label 
+{
+  font-size: 1.1rem !important;
+  color: #000;
+  font-family: 'Arapey', serif;
+}
+
+.Cart-form h4 
+{
+  font-size: 1.2rem;
+  font-family: 'Merienda', cursive !important;
+  position: relative;
+}
+
+.Cart-form h4::after
+{
+  content: " ";
+  width: 50%;
+  height: 1px;
+  background-color: #D70143 !important;
+  position: absolute;
+  right: 25%;
+  bottom: 50%;
+}
+
+
+select{
+  cursor: pointer;
+}
+
+.main-form textarea
+{
+  text-align: left;
+
+}
+canvas
+{
+  position: fixed;
+}
+.card-header , #collapseOne  , #collapseTwo 
+{
+
+  background-color: rgba(242, 242, 242, 0.4) !important;
+  font-family: 'Arapey', serif; 
+}
+
+#addToCart .container
+{
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 25px ;
+  background-color: #fff!important  ;
+}
+.headerone:hover
+{
+  color: rgba(0, 0, 0, 0.6);
+}
+.headerone
+{
+  font-size: 1.2rem;
+  font-family: 'Merienda', cursive !important;
+  color: #000;
+ 
+}
+
+
+/* ########################################## Side Panel ########################################## */
+
+.sidePanel
+{
+  border:1px solid rgba(0, 0, 0 , 0.1);
+  padding: 2rem;
+  box-shadow: 0 0 2px rgba(0, 0, 0 , 0.3);
+  height: 100%;
+}
+
+.sidePanel h5 , .paying
+{
+  font-size: 1.2rem;
+  font-family: 'Merienda', cursive !important;
+  position: relative;
+}
+
+.sidePanel h5::after 
+{
+  content: " ";
+  width: 50%;
+  height: 1px;
+  background-color: #D70143 !important;
+  position: absolute;
+  right: 25%;
+  bottom: 50%;
+}
+
+
+.sidePanel .headings , .sidePanel .headings2 
+{
+  font-size: 1.1rem !important;
+  color: #000;
+  font-family: 'Arapey', serif;
+  position: relative;
+}
+.sidePanel .headings::after
+{
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc !important;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+}
+.sidePanel .headings2::before
+{
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc !important;
+  position: absolute;
+  top:-10px;
+  left: 0;
+
+}
+
+.products span , .sidePanel label , .prices 
+{
+  
+  font-size: 1.1rem !important;
+  color: #000;
+  font-family: 'Arapey', serif;
+}
+
+.prices
+{
+  color: #b3b3b3;
+}
+
+.test3 input
+{
+  border: 0.01rem solid #eee !important;
+  padding:1.4rem 0.6rem;
+}
+
+.test3 input:focus
+{
+  border: 1px solid #D70143 !important;
+}
+
+::placeholder , select
+{
+  color: #595959 !important;
+  font-size: 0.9rem !important;
+  font-family: 'Arapey', serif;
+  word-spacing: 2px;
+}
+
+.orderd-btn
+{
+  background: linear-gradient(90deg, rgb(202, 90, 85) 0%, rgb(78, 88, 133) 100%);
+  color: white;
+  font-size: 0.9rem;
+  font-family: 'Arapey', serif;
+  padding:0.5rem 0.6rem;
+}
+
+.orderd-btn:hover
+{
+  color: white;
+}
+
+
 
 
 
@@ -331,335 +697,6 @@ footer
 
 
 /*-----------------------------end of footer------------------------------------*/
-
-
-
-/* ###################################### Form BEGIN ##################################################### */
-
-#addToCart a , #addToCart i 
-{
-  color: rgb(255, 255, 255) !important;
-  font-size: 1.5rem;
-
-}
-
-#addToCart a.checkLink
-{
-  color: #000 !important;
-  letter-spacing: .2rem;
-}
-label
-{
-  color: #624d50;
-  font-size: 1rem !important;
-}
-.Cart-form h4 
-{
-  color: #624d50 !important;
-}
-.Collap button 
-{
-  font-size: .9rem !important;
-  color: black;
-  line-height: 0 !important;
-
-
-}
-.collapse1 button 
-{
-
-  background: linear-gradient(90deg, rgb(202, 90, 85) 0%, rgb(78, 88, 133) 100%);
-
-}
-
-.card-header
-{
-  background-color : white !important ;
-}
-.card 
-{
-  border: none ;
-}
-.collapse1
-{
-  font-size : .9rem ; 
-  text-align: left;
-  margin: 1rem 0 0 2rem; 
-  font-weight: bolder;
-}
-input ,textarea ,select 
-{
-  background-color: transparent !important;
-  border: none !important;
-}
-
-
-.Collap input:focus , .main-form input:focus , .main-form textarea:focus
-{
-  color: #fff !important;
-
-}
-.test , .test2 , .test3{ 
-  position: relative;
-}
-.test::after
-{ 
-  content: "";
-  width: 100%;
-  height: 1.2px;
-  background-color: #fff;
-  bottom:-5;
-  right: 0;
-
-  position: absolute;
-}
-.test2::after
-{ 
-  content: "";
-  width: 90%;
-  height: .5px;
-  background-color: #fff;
-  bottom:-5;
-  left: 0;
-  position: absolute;
-}
-.test3::after
-{ 
-  content: "";
-  width: 100%;
-  height: .5px;
-  background-color: #fff;
-  bottom:-5;
-  left: 0;
-  position: absolute;
-}
-.couBtn
-{
-  padding: 1.3rem 2rem !important ;
-}
-
-.Collap input::placeholder , .main-form input::placeholder , .main-form textarea::placeholder
-{
-  color: rgba(255, 255, 255)!important;
-  font-size: 1rem;
-  
-}
-.Collap span{
-  font-size: 1.1rem !important;
-}
-.pass label 
-{
-  font-size:1rem ;
-}
-.collapse1 button
-{
-  padding:1rem 2rem;
-  background-color: rgba(0, 0, 0);
-  color: white;
-  font-size: 1.2rem !important;
-  font-weight: 600;
-  border: none;
-  transition: all .7s;
-
-}
-
-.collapse1 a.setPass
-{
-  font-size: 1.5rem !important;
-  margin-top: 1rem;
-
-}
-
-.collapse1 a.setPass::after
-{
-  content: '';
-  position: absolute;
-  bottom: 10px;
-  left: 20px;
-  width:0;
-  height: 2px;
-  /* background-color:linear-gradient(90deg, rgb(213, 51, 42) 0%, rgb(48, 57, 96) 100% ); */
-  transition: all 1s ;
-}
-.collapse1 a.setPass:hover::after
-{
-  content: '';
-  width: 25%;
-  height: 2px;
-  background-color: white;
-}
-
-
-.color-blue
-{
-  color: white;
-}
-
-.input-group-text
-{
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
-.Collap
-{
-  margin-left: -13px;
-}
-/* ########################################## CART FORM ########################################## */
-.Cart-form
-{
-  position: relative;
-}
-.Cart-form::before
-{
-  content: "";
-  position: absolute;
-  margin-left: 0;
-  width: 100%;
-  height: 1.5px;
-  background-color:#624d50 !important;
-  top: -20px;
-  left: 17px;
-}
-.color-brown
-{
-  color:#624d50 !important;
-
-}
-
-.main-form label 
-{
-  font-size: .8rem;
-  font-weight: bolder;
-}
-.Cart-form h4 
-{
-  font-size: 1.2rem;
-  font-weight: bolder;
-
-}
-.main-form input 
-{
-  font-size: .8rem;
-}
-select{
-  cursor: pointer;
-}
-
-.main-form textarea
-{
-  text-align: left;
-
-}
-canvas
-{
-  position: fixed;
-}
-.card-header , #collapseOne  , #collapseTwo 
-{
-
-  background: linear-gradient(90deg, rgba(213, 51, 42, 0.4) 0%, rgba(48, 57, 96, 0.5) 100%);
-  
-}
-#addToCart .container a
-{
-  font-family: 'Sriracha', cursive;
-  letter-spacing: .2rem;
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-#addToCart .container
-{
-  box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 25px ;
-  background-color: transparent !important  ;
-}
-.headerone:hover
-{
-  color: rgba(0, 0, 0, 0.6);
-}
-.headerone
-{
-  color: rgba(0, 0, 0, 1);
-}
-.accordion
-{
-  margin-right: -.9rem;
-  margin-left: -.2rem;
-}
-#addToCart a.checkLink{
-  color:#624D50 !important;
-}
-
-/* ########################################## Side Panel ########################################## */
-
-.sidePanel
-{
-  border:solid rgb(98,77,80) 2px ;
-  height: 100%;
-}
-
-.sidePanel h5
-{
-  font-size :1.5rem;
-  font-weight: bold;
-  color: white;
-}
-.sidePanel .headings , .sidePanel .headings2 
-{
-  font-weight: bolder;
-  font-size: 1.1rem;
-  color: rgb(80, 69, 71);
-  position: relative;
-}
-.sidePanel .headings::after
-{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  bottom: -5px;
-  left: 0;
-
-}
-.sidePanel .headings2::before
-{
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: white;
-  top:-10px;
-  left: 0;
-
-}
-
-.products span
-{
-  
-  font-weight: bold;
-  color: rgb(80, 69, 71);
-  font-size: 1.1rem;
-}
-.prices
-{
-  color: #fff;
-  font-size: 1.1rem;
-
-}
-
-.paying
-{
-  text-align: left;
-  margin-top: 1.6rem;
-  font-weight: bold;
-  font-size: 1.1rem;
-  color: rgb(80, 69, 71);
-}
-.sidePanel label{
-  font-size: 1rem;
-  font-weight: bolder;
-}
 
 
 

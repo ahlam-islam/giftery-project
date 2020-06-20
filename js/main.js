@@ -61,6 +61,17 @@ $(".arrow-up").click(function () {
     $("html , body").animate({scrollTop: '0'} , 1000)
 })
 
+
+// go to sale section
+
+$("a[href= '#sale']").click(function () {
+  let saleSection = $("#sale").offset().top;
+  $("html , body").animate({scrollTop: saleSection} , 1000)
+})
+
+
+
+
 /* ####################################### video ######################################### */
 
 $('.close-video').click(function () { 

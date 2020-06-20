@@ -95,6 +95,24 @@ input:focus
   height: 2px;
   background-color: white;
 }
+.dropdown-menu 
+{
+  background:linear-gradient(90deg, rgba(213, 51, 42 , 0.3) 0%, rgba(48, 57, 96 , 0.3) 100% );
+  border: none;
+}
+
+.dropdown-menu .dropdown-item
+{
+  color: white;
+  font-family: 'Arapey', serif;
+  font-size: 1.1rem;
+
+}
+
+.dropdown-menu .dropdown-item:hover
+{
+  color: black;
+}
 
 /* Toggle */
 .navbar-toggler
@@ -280,9 +298,8 @@ input:focus
 .loginLink
 {
   text-transform: none;
-  font-family: 'Bellota', cursive;
+  font-family: 'Arapey', serif;
   font-size: 1.1rem;
-  font-weight: bold;
   transition: 1s;
 }
 
