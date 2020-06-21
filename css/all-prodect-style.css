@@ -133,6 +133,25 @@ input:focus
   background-color: white;
 }
 
+.dropdown-menu 
+{
+  background:linear-gradient(90deg, rgba(213, 51, 42 , 0.3) 0%, rgba(48, 57, 96 , 0.3) 100% );
+  border: none;
+}
+
+.dropdown-menu .dropdown-item
+{
+  color: white;
+  font-family: 'Arapey', serif;
+  font-size: 1.1rem;
+
+}
+
+.dropdown-menu .dropdown-item:hover
+{
+  color: black;
+}
+
 /* Toggle */
 .navbar-toggler
 {
